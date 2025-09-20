@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Welcome!</h1>
+    <button onclick="showMessage()">Click Me</button>
+<button onclick="alert('Hello, I am learning JavaScript!')">Click</button>
+
+    <script>
+      function showMessage() {
+        alert("Hello, welcome to JavaScript!");
+      }
+      function greet() {
+  console.log("Hello, welcome!");
+}
+
+greet(); 
+function welcome(name) {
+  console.log("Hello " + name);
+}
+
+welcome("Bala");
+welcome("Murugan");
+// function call
+function add(a, b) {
+  return a + b;
+}
+
+let result = add(5, 3);
+console.log(result); // 8
+
+
+
+
+
+let colors = ["red", "blue"];
+
+colors.push("green");
+console.log(colors); // ["red", "blue", "green"]
+
+colors.pop();
+console.log(colors); // ["red", "blue"]
+
+colors.unshift("yellow");
+console.log(colors); // ["yellow", "red", "blue"]
+
+colors.shift(
+);
+console.log(colors);
+
+
+
+let names = ["Bala", "Murugan", "Anbu"];
+
+for (let i = 0; i < names.length; i++) {
+  console.log(names[i]);
+}
+
+
+
+
+let nums = [10, 2, 3];
+
+nums.forEach(function(number) {
+  console.log(number * 2);
+});
+
+
+
+let student = {
+  name: "Anbu",
+  marks: {
+    math: 90,
+    english: 85
+  }
+};
+
+console.log(student.marks.math); // 90
+
+
+
+let products = [
+  { name: "Laptop", price: 50000 },
+  { name: "Phone", price: 20000 },
+  { name: "Tablet", price: 15000 }
+];
+
+products.forEach((item) => {
+  console.log(item.name + " costs ₹" + item.price);
+});
+
+
+
+let myProfile = {
+  name: "Your Name",
+  age: 24,
+  skills: ["HTML", "CSS", "JavaScript"],
+  education: {
+    degree: "BSc Computer Science",
+    year: 2022
+  }
+};
+
+console.log("Hi, I am " + myProfile.name);
+console.log("I know " + myProfile.skills.join(", "));
+
+
+
+
+
+let team = [
+  { name: "Arun", role: "Frontend", skill: "React" },
+  { name: "Devi", role: "Backend", skill: "Node.js" },
+  { name: "Kumar", role: "Full Stack", skill: "MERN" }
+];
+
+team.forEach(member => {
+  console.log(`${member.name} is a ${member.role} developer skilled in ${member.skill}`);
+});
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 id="title">Welcome!</h1>
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+      function changeText() {
+        document.getElementById("title").innerText = "Hello from JavaScript!";
+      }
+    </script>
+  </body>
+</html>
+<p id="msg">Hello user</p>
+<button onclick="document.getElementById('msg').style.color = 'red'">Change Color</button>
+
+
+
+
+<button onclick="changeText()">Click Me</button>
+<p id="text">Original</p>
+
+<script>
+function changeText() {
+  document.getElementById("text").innerText = "Text Changed!";
+}
+</script>

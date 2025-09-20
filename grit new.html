@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      width: 300px;
+      height: 300px;
+    }
+
+    .container {
+      min-height: 1000px;
+      background-color: rgb(32, 100, 100);
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      border: 20px solid green;
+      justify-content: center;
+    }
+
+    .card-one, .card-two, .card-three, .card-four, 
+    .card-five, .card-six, .card-seven, .card-eight, 
+    .card-nine, .card-ten {
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      height: 310px;
+      width: 310px;
+      border-radius: 20px;
+      border: 5px solid sandybrown;
+      background-color: rgb(224, 183, 153);
+      text-align: center;
+      
+      transition-duration: 1s;
+    }
+    .card-one:hover,.card-two:hover,.card-three:hover{
+      background-color: rgb(20, 58, 20);
+      cursor: pointer;
+      color: aliceblue;
+      transform: translateY(200px)
+      ;
+    }
+    .card-four:hover,.card-five:hover,.card-six:hover{
+      background-color: coral;
+      cursor: pointer;
+      color: black;
+      transform: translate(100px)
+    }
+    .card-seven:hover,.card-eight:hover,.card-nine:hover{
+      background-color: aqua;
+      cursor: pointer;
+      color: blue;
+      transform: rotate(1,5);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card-one"><img src="/image/1.jpg" alt="1 image"><p>price</p><h1>$30</h1></div>
+    <div class="card-two"><img src="/image/2 (10).jpg" alt="2 image"><p>price</p><h1>$30</h1></div>
+    <div class="card-three"><img src="/image/3.jpg" alt="3 image"><p>price</p><h1>$30</h1></div>
+    <div class="card-four"><img src="/image/4.jpg" alt="4 image"><p>price</p><h1>$30</h1></div>
+    <div class="card-five"><img src="/image/5.jpg" alt="5 image"><p>price</p><h1>$30</h1></div>
+    <div class="card-six"><img src="/image/6.jpg" alt="6 image"><p>price</p><h1>$30</h1></div>
+    <div class="card-seven"><img src="/image/7.jpg" alt="7 image"><p>price</p><h1>$30</h1></div>
+    <div class="card-eight"><img src="/image/8.jpg" alt="8 image"><p>price</p><h1>$30</h1></div>
+    <div class="card-nine"><img src="/image/9.jpg"  alt="9 image"><p>price</p><h1>$30</h1></div>
+    <div class="card-ten"><img src="/image/10.jpg" alt="10 image"><p>price</p><h1>$30</h1></div>
+    <div class="card-one"><img src="/image/blue flower.jpg" alt="flowewr"><p>price</p><h1>$30</h1></div>
+  </div>
+</body>
+</html><div>This is a block</div>
+<span>This is inline</span>z
+
+
+    

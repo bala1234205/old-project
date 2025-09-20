@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .product-div{
+    height: 400px;
+    width: 250px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border:2px solid gray;
+     border-radius: 5px;
+    
+  }
+  .product-div img{
+    height: 150px;
+    width: 200px;
+    transition: 2s;
+  }
+  .product-div:hover img,
+.product-div:hover h1,
+.product-div:hover h2,
+.product-div:hover p,
+.product-div:hover span,
+.product-div:hover button {
+  transform: scale(1.1);
+}
+
+  .product-div h1{
+    font-size: 18px;
+  }
+  .product-div h2{
+    font-size: 17px;
+  }
+  .product-div p{
+    font-size: 16px;
+    margin-top: -10px;
+  }
+  .product-div span{
+    font-size: 16px;
+
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  .product-div button{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding:10px 20px;
+    border-radius: 5px;
+  }
+</style>
+<body>
+  <h1 style="text-align: center;font-size: 32px; font-weight: bold;color: white; background-color: #ff5f;">products</h1>
+  <div class="container">
+
+  </div>
+  <script>
+    const fetchData = async()=>{
+   const card =  document.getElementsByClassName('container')[0];
+  const response =await fetch('https://fakestoreapi.com/products?limit=20')
+    .then((response)=>response.json())
+    // .then((product)=>console.log(product))
+    .then ((product)=>{
+      console.log(product)
+      product.forEach(item =>{
+        card.innerHTML +=
+        `<div class="product-div">
+
+          <img src = ${item.image} alt = ${item.title}>
+          <h1>${item.category}</h1>
+          <h2>${item.title}</h2>
+          <p>Price$:${item.price}</p>
+          <span> Rating:${item.rating.rate}</span>
+          <span>Count:${item.rating.count}</span><br>
+          <button>Add to cart</button>
+
+          </div>`
+      })
+    })
+    .catch((error)=>console.log(error))
+  }
+
+
+    fetchData();
+    
+  </script>
+
+
+</script>
+</body>
+</html>

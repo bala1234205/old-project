@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grit</title>
+  <style>
+    img {
+      width: 100%;
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    .one {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      background-color: palevioletred;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      display: grid;
+      height: 300px;
+      width: 100%;
+      border-radius: 20px;
+      border: 2px solid black;
+      background-color: aqua;
+      padding: 10px;
+      text-align: center;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .two:hover, .eight:hover {
+      background-color: brown;
+      transform: rotate(15deg);
+    }
+
+    .three:hover, .five:hover, .six:hover {
+      background-color: chocolate;
+      transform: scale(1.1);
+    }
+
+    .four:hover, .six:hover, .seven:hover {
+      background-color: rgb(105, 70, 70);
+      transform: rotate(20deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="one">
+    <div class="card two">
+      <img src="/image/1.jpg" alt="image1">
+      <p>Price</p>
+      <h1>$200</h1>
+    </div>
+    <div class="card two">
+      <img src="/image/1.jpg" alt="image1">
+      <p>Price</p>
+      <h1>$200</h1>
+    </div>
+    <div class="card three">
+      <img src="/image/1.jpg" alt="image1">
+      <p>Price</p>
+      <h1>$200</h1>
+    </div>
+    <div class="card four">
+      <img src="/image/1.jpg" alt="image1">
+      <p>Price</p>
+      <h1>$200</h1>
+    </div>
+    <div class="card five">
+      <img src="/image/6.jpg" alt="image6">
+      <p>Price</p>
+      <h1>$200</h1>
+    </div>
+    <div class="card six">
+      <img src="/image/8.jpg" alt="image8">
+      <p>Price</p>
+      <h1>$200</h1>
+    </div>
+    <div class="card seven">
+      <img src="/image/9.jpg" alt="image9">
+      <p>Price</p>
+      <h1>$200</h1>
+    </div>
+    <div class="card eight">
+      <img src="/image/anil.jpg" alt="image10">
+      <p>Price</p>
+      <h1>$200</h1>
+    </div>
+    <div class="card four">
+      <img src="/image/1.jpg" alt="image1">
+      <p>Price</p>
+      <h1>$200</h1>
+    </div>
+    <div class="card five">
+      <img src="/image/6.jpg" alt="image6">
+      <p>Price</p>
+      <h1>$200</h1>
+    </div>
+  </div>
+</body>
+</html>

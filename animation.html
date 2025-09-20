@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<style>
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 500px;
+    }
+    .box{
+        width: 200px;
+        height: 20px;
+        position: relative;
+ background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        animation-name: square;
+        animation-duration: 5s;
+animation-iteration-count:2;
+border-radius: 100px;
+
+
+
+}
+@keyframes square{
+    0%{
+        left: 0px;
+        top: 0px;
+
+    }
+    25%{
+        left: 500px;
+        top: 0px;
+        transform: rotate3d(90deg)
+        
+        
+    }
+    
+    50%{
+        left: 500px;
+        top: 300px;
+        transform: rotate
+*
+    }
+    75%{
+        left: 0px;
+        top: 300px;
+        transform: rotate(180deg);
+    
+    }
+    100%{
+        left:0 px;
+        top: 0px;
+        
+        
+    }
+}
+</style>
+<body>
+    <div class="box">
+    
+        <img src="/image/car1.jpg" alt="car">
+    </div>
+</body>
+</html>

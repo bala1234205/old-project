@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+    div{
+        margin: 20px 0;
+        padding: 10px;
+        border: 1px solid #4CAF50;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+    h1 {
+        color: #4CAF50;
+    }
+    p {
+        font-size: 16px;
+    }
+    img {
+        border: 2px solid #4CAF50;
+        border-radius: 8px;
+    }
+    table,tr, th, td {
+       border-collapse: collapse;
+
+        border: 2px solid #4CAF50;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+
+    form {
+        margin: 20px 0;
+        padding: 10px;
+        border: 1px solid #4CAF50;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+    label{
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    input{
+        width: 40%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #4CAF50;
+        border-radius: 4px;
+    }
+    textarea{
+        width: 40%;
+        height: 100px;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #4CAF50;
+        border-radius: 4px;
+    }
+    button, input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    h1{
+        ;
+        color: #4CAF50;
+        margin-bottom: 20px;
+        
+    }
+</style>
+<body>
+    <div>
+    <h1>Hello, World!</h1>
+    <p>This is a simple HTML document.</p>
+    <img src="./image/nature.jpg" alt="err" height="300" width="500">
+
+</div>
+
+    <div>
+        <h1>About This Page</h1>
+        <p>This page is designed to demonstrate basic HTML structure and styling.</p>
+    </div>
+
+ 
+    <table>
+       <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+       </tr>
+         <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+          <td>Row 1, Cell 3</td>
+       </tr>
+       <tr>
+          <td>Row 2, Cell 1</td>
+          <td>Row 2, Cell 2</td>
+          <td>Row 2, Cell 3</td>
+       </tr>
+       <tr>
+          <td>Row 3, Cell 1</td>
+          <td>Row 3, Cell 2</td>
+          <td>Row 3, Cell 3</td>
+       </tr>
+       <tr>
+          <td>Row 4, Cell 1</td>
+          <td>Row 4, Cell 2</td>
+          <td>Row 4, Cell 3</td>
+       </tr>
+    </table>
+
+
+
+    <form action="">
+
+        <h1>signup form</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"  required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>  
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

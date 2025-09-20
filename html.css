@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Page Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: 60px 1fr 40px;
+      height: 100vh;
+    }
+    header {
+      grid-area: header;
+      background: #4CAF50;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    aside {
+      grid-area: sidebar;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    main {
+      grid-area: main;
+      background: #fff;
+      padding: 20px;
+    }
+    footer {
+      grid-area: footer;
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+    <aside>Sidebar<br>Menu 1<br>Menu 2</aside>
+    <main>Main Content Area</main>
+    <footer>Footer © 2025</footer>
+  </div>
+</body>
+</html>

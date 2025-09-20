@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript">
+function mover()
+{
+document.getElementById('img1').src="image/3.jpg";
+document.getElementById('img1').width="400";
+document.getElementById('img1').height="400";
+
+}
+function mout()
+{
+document.getElementById('img1').src="image/4.jpg";
+document.getElementById('img1').width="300";
+document.getElementById('img1').height="300";
+}
+</script>
+</head>
+<body>
+<img src="/image/1.jpg" id="img1" width="100" height="100" onmouseover="mover()" onmouseout="mout()">
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="myText">Mouse Over Me!</h2>
+
+<script>
+  let text = document.getElementById("myText");
+
+  text.addEventListener("mouseover", function() {
+    text.style.color = "red";  // Mouse entered
+  });
+
+  text.addEventListener("mouseout", function() {
+    text.style.color = "black"; // Mouse left
+  });
+</script>
+
+</body>
+</html>
